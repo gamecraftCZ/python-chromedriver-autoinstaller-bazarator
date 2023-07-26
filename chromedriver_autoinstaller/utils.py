@@ -217,6 +217,7 @@ def get_matched_chromedriver_version(chrome_version, no_ssl=False):
     :return:               String. The version of chromedriver that matches the Chrome version
                            None.   if no matching version of chromedriver was discovered
     """
+    return chrome_version
     # Newer versions of chrome use the CfT publishing system
     if chrome_version >= "115":
         version_url = "googlechromelabs.github.io/chrome-for-testing/known-good-versions.json"
