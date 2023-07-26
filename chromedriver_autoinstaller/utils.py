@@ -91,6 +91,7 @@ def get_chromedriver_url(chromedriver_version, no_ssl=False):
     :param no_ssl:               Whether to use the encryption protocol when downloading the chrome driver
     :return:                     String. Download URL for chromedriver
     """
+    return f"https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/{chromedriver_version}/win32/chromedriver-win32.zip"
     platform, architecture = get_platform_architecture(chromedriver_version)
     if chromedriver_version >= "115":  # new CfT ChromeDriver versions have their URLs published
         versions_url = "googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json"
